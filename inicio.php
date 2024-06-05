@@ -21,13 +21,15 @@
                         <a class="btn btn-primary btn-lg" href="cadastro.php" role="button">Cadastre-se</a>
                         <a class="btn btn-primary btn-lg" href="pesquisa.php" role="button">Pesquisar</a>
                     </p>
+                 
                 </div>
             </div>
         </div>
+    
+
     </div>
 
-
-
+  
 
 
 

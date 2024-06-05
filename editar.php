@@ -11,11 +11,11 @@
 <body>
     <?php 
     include("conexao.php");
-    $id = $_GET["id"] ?? '';
-    $sql = "SELECT * FROM usuario WHERE id = $id";
+    $id = $_GET["id"] ?? '';//usa o metodo get=pegar para pegar as informações do id
+    $sql = "SELECT * FROM usuario WHERE id = $id";//selecione tudo na tabela usuario onde o id receba a varíavel id
 
     $dados = mysqli_query($conexao,$sql);
-    $linha = mysqli_fetch_assoc($dados);
+    $linha = mysqli_fetch_assoc($dados);//vetor que vai armazenar os dados das linhas
     
     
     ?>
