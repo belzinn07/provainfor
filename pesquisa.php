@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>cadastrado</title>
+    <title>pesquisa</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 
@@ -72,15 +72,26 @@
                             </button>
                         </div>
                         <div class="modal-body">
-                        <p>Deseja realmente excluir? </p>
+                            <form action="ecluir.php" method="post">
+                        <p>Deseja realmente excluir <b id="nome_pessoa">Nome da pessoa</b>?</p>
+                            </form>
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Não</button>
+                            <input type="hidden" name="nome" id="nome_pessoa1">
                             <button type="button" class="btn btn-primary">Sim</button>
+                           
                         </div>
                         </div>
                     </div>
                     </div>
+                    <script>//usando o java script
+                        function pegar_dados(id,nome){
+                            document.getElementById("nome_pessoa").innerHTML = nome;
+                            document.getElementById("nome_pessoa1").value = nome;
+                            document.getElementById("cod_pessoa").value = id;
+                        }
+                    </script>
 
                 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
                 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
