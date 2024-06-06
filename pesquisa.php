@@ -79,6 +79,7 @@
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Não</button>
                             <input type="hidden" name="nome" id="nome_pessoa1">
+                            <input type="hidden" name="id" id="cod_pessoa">
                             <button type="button" class="btn btn-primary">Sim</button>
                            
                         </div>
