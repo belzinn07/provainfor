@@ -48,7 +48,7 @@
                                 <td>$email</td>
                                 <td width=150px>
                                <a href='editar.php? id=$id' class='btn btn-success btn-sm'>Editar</a>
-                               <a href='#' class='btn btn-danger  btn-sm' data-toggle='modal' data-target='#confirma'>Excluir</a>
+                               <a href='#' class='btn btn-danger  btn-sm' data-toggle='modal' data-target='#confirma' onclik=".'"'."pegar_dados($id,'$nome')".'"'.">Excluir</a>
                                </td>
 
                              </tr>";
@@ -86,13 +86,16 @@
                         </div>
                     </div>
                     </div>
-                    <script>//usando o java script
+                            <!--Utilizando o Javascript-->   
+                    <!--Função para pegar dados do id e do nome-->
+                    <script>
                         function pegar_dados(id,nome){
                             document.getElementById("nome_pessoa").innerHTML = nome;
                             document.getElementById("nome_pessoa1").value = nome;
                             document.getElementById("cod_pessoa").value = id;
                         }
                     </script>
+                    
 
                 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
                 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
