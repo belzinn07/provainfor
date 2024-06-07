@@ -37,7 +37,7 @@
                         </thead>
                         <tbody>
                             <?php 
-                            while($linha = mysqli_fetch_assoc($dados)){
+                            while($linha = mysqli_fetch_assoc(mysqli_result($dados)){
                                 $id = $linha['id'];
                                 $nome = $linha['nome'];
                                 $email = $linha['email'];
