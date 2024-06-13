@@ -37,7 +37,7 @@
                         </thead>
                         <tbody>
                             <?php 
-                            while($linha = mysqli_fetch_assoc(mysqli_result($dados)){
+                            while($linha = mysqli_fetch_assoc($dados)){
                                 $id = $linha['id'];
                                 $nome = $linha['nome'];
                                 $email = $linha['email'];
@@ -71,8 +71,8 @@
                             <span aria-hidden="true">&times;</span>
                             </button>
                         </div>
-                        <div class="modal-body">
-                            <form action="ecluir.php" method="post">
+                        <div class="modal-body"><!--parte do botão de excluir-->
+                            <form action="excluir.php" method="post">
                         <p>Deseja realmente excluir <b id="nome_pessoa">Nome da pessoa</b>?</p>
                             </form>
                         </div>
@@ -90,9 +90,9 @@
                     <!--Função para pegar dados do id e do nome-->
                     <script>
                         function pegar_dados(id,nome){
-                            document.getElementById("nome_pessoa").innerHTML = nome;
-                            document.getElementById("nome_pessoa1").value = nome;
-                            document.getElementById("cod_pessoa").value = id;
+                            document.getElementById("nome_pessoa").innerHTML = nome
+                            document.getElementById("nome_pessoa1").value = nome
+                            document.getElementById("cod_pessoa").value = id
                         }
                     </script>
                     
